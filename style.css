@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(45deg,#333,#000);
+}
+
+.Calculator{
+    border: 1px solid white;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: transparent;
+    backdrop-filter: blur(50px);
+    box-shadow: 3px 3px 3px rgba(240, 248, 255, 0.345),
+                -3px -3px 3px rgba(240, 255, 255, 0.479);
+}
+
+input{
+    width: 100%;
+    padding: 10px;
+    background-color: transparent;
+    box-shadow: 1px 3px 10px rgba(245, 245, 245, 0.514),
+                -1px -3px 10px rgba(245, 245, 245, 0.514);
+    font-size: 1.4em;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    text-align: right;
+    color: azure;
+    border: none;
+}
+
+input::placeholder{
+    color: white;
+}
+
+button{
+    width: 60px;
+    height: 60px;
+    margin: 10px;
+    background-color: transparent;
+    border-radius: 50%;
+    color: white;
+    font-size: 1.2em;
+    box-shadow: 1px 2px 3px rgba(0, 225, 255, 0.575),
+                -1px -2px 3px rgba(0, 255, 255, 0.575);
+    cursor: pointer;
+    transition: background 0.5s ease,transform 0.3s ease;
+}
+
+button:hover{
+    background: rgb(21, 15, 15);
+    font-weight: 600;
+    transform: scale(1.1);
+}
+
+.equal{
+    background: #ff6600;
+    font-weight: 900;
+    transition: background 0.3s linear,transform 0.7 ease;
+}
+
+.equal:hover{
+    scale: 1.1;
+    background: #ff8d22;
+}
+
+.operator{
+    color: #9BEC00;
+    font-size: 1.25em;
+    font-weight: 900;
+}
+
+.deleteBtn{
+    color: rgb(252, 57, 14);
+    font-size: 1.25em;
+    font-weight: 900;
+}
+
+button:active{
+    transition: transform 0.5s linear;
+    scale:0.7;
+}
